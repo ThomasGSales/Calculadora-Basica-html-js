@@ -4,36 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Calculadora de Thomass</title>
 </head>
 <body>
-    <h1>By Thomass</h1>
+  
+    <span>&copy;ssamoht</span>
     <div class="calculadora">
-        <div class="inpute">
-            <input type="text" id="displayid">
+        <h1>Calculadora</h1>
+        <div>
+            <p id="displayid"></p>
         </div>
         <div class="teclado">
             <div>
-                <input type="button" value="7" onclick="funcao()">
-                <input type="button" value="8" onclick="funcao()">
-                <input type="button" value="9" onclick="funcao()">
+                <input type="button" class="botao" value="7" onclick="funcao('7')">
+                <input type="button" class="botao" value="8" onclick="funcao('8')">
+                <input type="button" class="botao" value="9" onclick="funcao('9')">
+                <input type="button" class="botao2" value="+"onclick="funcao('+')">
             </div>
             <div>
-                <input type="button" value="4" onclick="funcao()">
-                <input type="button" value="5" onclick="funcao()">
-                <input type="button" value="6" onclick="funcao()">
+                <input type="button" class="botao" value="4" onclick="funcao('4')">
+                <input type="button" class="botao" value="5" onclick="funcao('5')">
+                <input type="button" class="botao" value="6" onclick="funcao('6')">
+                <input type="button" class="botao2" value="-" onclick="funcao('-')">
             </div>
             <div>
-                <input type="button" value="1" onclick="funcao()">
-                <input type="button" value="2" onclick="funcao()">
-                <input type="button" value="3" onclick="funcao()">
+                <input type="button" class="botao" value="1" onclick="funcao('1')">
+                <input type="button" class="botao" value="2" onclick="funcao('2')">
+                <input type="button" class="botao" value="3" onclick="funcao('3')">
+                <input type="button" class="botao2" value="*" onclick="funcao('*')">
             </div>
             <div>
-                <input type="button" value="c" onclick="funcao()">
-                <input type="button" value="0" onclick="funcao()">
-                <input type="button" value="=" onclick="funcao()">
+                <input type="button" class="botao2" value="c" id="clearid" >
+                <input type="button" class="botao" class="botao" value="0" onclick="funcao('0')">
+                <input type="button" class="botao2" value="/" onclick="funcao('/')">
+                <input type="button" class="botao2" id="igualid" value="=">
             </div>
         </div>
     </div>
+    
 </body>
+<script src="/main.js"></script>
 </html>
